@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Loan Calculator App"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <EditText
+        android:id="@+id/editTextDuration"
+        android:layout_width="141dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="Loan Duration"
+        android:inputType="textPersonName|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348" />
+
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="141dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="Loan Amount"
+        android:inputType="textPersonName|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <EditText
+        android:id="@+id/editTextRate"
+        android:layout_width="141dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="Rate of Interest"
+        android:inputType="textPersonName|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457" />
+
+    <Button
+        android:id="@+id/buttonCal"
+        android:layout_width="137dp"
+        android:layout_height="130dp"
+        android:onClick="btnCalcul"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.802"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="172dp"
+        android:layout_height="62dp"
+        android:text="Total Loan Amount:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.621"
+        tools:text="Total Loan Amount:" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="91dp"
+        android:layout_height="26dp"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.514" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
